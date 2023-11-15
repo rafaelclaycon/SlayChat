@@ -89,10 +89,8 @@
 		D982F7572B0535FE0064EA57 /* SlayChat */ = {
 			isa = PBXGroup;
 			children = (
-				D982F7582B0535FE0064EA57 /* SlayChatApp.swift */,
-				D982F75A2B0535FE0064EA57 /* ContentView.swift */,
-				D982F75C2B0535FF0064EA57 /* Assets.xcassets */,
-				D982F75E2B0535FF0064EA57 /* Preview Content */,
+				D982F7822B05373F0064EA57 /* Sources */,
+				D982F7832B05374A0064EA57 /* Resources */,
 			);
 			path = SlayChat;
 			sourceTree = "<group>";
@@ -111,6 +109,64 @@
 				D982F7692B0535FF0064EA57 /* SlayChatTests.swift */,
 			);
 			path = SlayChatTests;
+			sourceTree = "<group>";
+		};
+		D982F7822B05373F0064EA57 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D982F7842B0537830064EA57 /* Features */,
+				D982F7852B05378A0064EA57 /* AppSupport */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D982F7832B05374A0064EA57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D982F75C2B0535FF0064EA57 /* Assets.xcassets */,
+				D982F75E2B0535FF0064EA57 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D982F7842B0537830064EA57 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D982F7862B05379E0064EA57 /* Login */,
+				D982F7872B0537A40064EA57 /* ChatList */,
+				D982F7882B0537AC0064EA57 /* ChatView */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D982F7852B05378A0064EA57 /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				D982F7582B0535FE0064EA57 /* SlayChatApp.swift */,
+			);
+			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		D982F7862B05379E0064EA57 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D982F75A2B0535FE0064EA57 /* ContentView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D982F7872B0537A40064EA57 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		D982F7882B0537AC0064EA57 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SlayChat/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SlayChat/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 452K36768R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -434,7 +490,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SlayChat/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SlayChat/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 452K36768R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

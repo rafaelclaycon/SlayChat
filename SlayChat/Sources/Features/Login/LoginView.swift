@@ -12,40 +12,50 @@ struct LoginView: View {
     @State private var userName: String = ""
     @State private var password: String = ""
 
+    private let gradient = LinearGradient(gradient: Gradient(colors: [.pink, .pink, .yellow]), startPoint: .topLeading, endPoint: .bottomTrailing)
+
     var body: some View {
-        ScrollView {
-            VStack(spacing: 30) {
-                Spacer()
-
-                Text("💅🏽")
-                    .font(.system(size: 60))
-
-                Text("Welcome to SlayChat")
-                    .font(.largeTitle)
-                    .bold()
-
-                TextField("User name", text: $userName)
-                    .textFieldStyle(.roundedBorder)
-
-                TextField("Password", text: $password)
-                    .textFieldStyle(.roundedBorder)
-
-                Button {
-                    print("")
-                } label: {
-                    Text("Log In")
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 30) {
+                    Spacer()
+                    
+                    Text("💅🏽")
+                        .font(.system(size: 60))
+                    
+                    Text("Welcome to SlayChat")
+                        .font(.largeTitle)
                         .bold()
-                        .frame(maxWidth: .infinity)
+                    
+                    TextField("User name", text: $userName)
+                        .textFieldStyle(.roundedBorder)
+                    
+                    TextField("Password", text: $password)
+                        .textFieldStyle(.roundedBorder)
+                    
+                    Button {
+                        print("")
+                    } label: {
+                        Text("Log In")
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                    }
+                    .borderedProminentButton(colored: .accentColor)
+                    
+                    NavigationLink {
+                        CreateNewAccountView()
+                    } label: {
+                        Text("Create An Account")
+                    }
+                    
+                    Spacer()
                 }
-                .borderedProminentButton(colored: .accentColor)
-
-                Button("Create An Account") {
-                    print("")
-                }
-
-                Spacer()
+                .padding()
             }
-            .padding()
+            .background {
+                gradient
+                    .ignoresSafeArea()
+            }
         }
     }
 }

@@ -13,6 +13,8 @@
 		D982F7602B0535FF0064EA57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D982F75F2B0535FF0064EA57 /* Preview Assets.xcassets */; };
 		D982F76A2B0535FF0064EA57 /* SlayChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F7692B0535FF0064EA57 /* SlayChatTests.swift */; };
 		D982F78B2B053B330064EA57 /* LargeCapsuleBorderedProminentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F78A2B053B330064EA57 /* LargeCapsuleBorderedProminentButtonStyle.swift */; };
+		D982F78E2B053D7E0064EA57 /* CreateNewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F78D2B053D7E0064EA57 /* CreateNewAccountView.swift */; };
+		D982F7902B053DED0064EA57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F78F2B053DED0064EA57 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		D982F7692B0535FF0064EA57 /* SlayChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlayChatTests.swift; sourceTree = "<group>"; };
 		D982F76F2B0535FF0064EA57 /* SlayChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlayChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D982F78A2B053B330064EA57 /* LargeCapsuleBorderedProminentButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCapsuleBorderedProminentButtonStyle.swift; sourceTree = "<group>"; };
+		D982F78D2B053D7E0064EA57 /* CreateNewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAccountView.swift; sourceTree = "<group>"; };
+		D982F78F2B053DED0064EA57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,8 @@
 		D982F7822B05373F0064EA57 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D982F7892B053B1C0064EA57 /* ViewModifiers */,
 				D982F7842B0537830064EA57 /* Features */,
+				D982F7892B053B1C0064EA57 /* ViewModifiers */,
 				D982F7852B05378A0064EA57 /* AppSupport */,
 			);
 			path = Sources;
@@ -135,7 +139,9 @@
 		D982F7842B0537830064EA57 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D982F78F2B053DED0064EA57 /* MainView.swift */,
 				D982F7862B05379E0064EA57 /* Login */,
+				D982F78C2B053D690064EA57 /* CreateAnAccount */,
 				D982F7872B0537A40064EA57 /* ChatList */,
 				D982F7882B0537AC0064EA57 /* ChatView */,
 			);
@@ -178,6 +184,14 @@
 				D982F78A2B053B330064EA57 /* LargeCapsuleBorderedProminentButtonStyle.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		D982F78C2B053D690064EA57 /* CreateAnAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D982F78D2B053D7E0064EA57 /* CreateNewAccountView.swift */,
+			);
+			path = CreateAnAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,8 @@
 				D982F78B2B053B330064EA57 /* LargeCapsuleBorderedProminentButtonStyle.swift in Sources */,
 				D982F75B2B0535FE0064EA57 /* LoginView.swift in Sources */,
 				D982F7592B0535FE0064EA57 /* SlayChatApp.swift in Sources */,
+				D982F7902B053DED0064EA57 /* MainView.swift in Sources */,
+				D982F78E2B053D7E0064EA57 /* CreateNewAccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

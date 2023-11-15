@@ -12,8 +12,6 @@
 		D982F75D2B0535FF0064EA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D982F75C2B0535FF0064EA57 /* Assets.xcassets */; };
 		D982F7602B0535FF0064EA57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D982F75F2B0535FF0064EA57 /* Preview Assets.xcassets */; };
 		D982F76A2B0535FF0064EA57 /* SlayChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F7692B0535FF0064EA57 /* SlayChatTests.swift */; };
-		D982F7742B0535FF0064EA57 /* SlayChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F7732B0535FF0064EA57 /* SlayChatUITests.swift */; };
-		D982F7762B0535FF0064EA57 /* SlayChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F7752B0535FF0064EA57 /* SlayChatUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +40,6 @@
 		D982F7652B0535FF0064EA57 /* SlayChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlayChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D982F7692B0535FF0064EA57 /* SlayChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlayChatTests.swift; sourceTree = "<group>"; };
 		D982F76F2B0535FF0064EA57 /* SlayChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlayChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D982F7732B0535FF0064EA57 /* SlayChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlayChatUITests.swift; sourceTree = "<group>"; };
-		D982F7752B0535FF0064EA57 /* SlayChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlayChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +72,6 @@
 			children = (
 				D982F7572B0535FE0064EA57 /* SlayChat */,
 				D982F7682B0535FF0064EA57 /* SlayChatTests */,
-				D982F7722B0535FF0064EA57 /* SlayChatUITests */,
 				D982F7562B0535FE0064EA57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,15 +111,6 @@
 				D982F7692B0535FF0064EA57 /* SlayChatTests.swift */,
 			);
 			path = SlayChatTests;
-			sourceTree = "<group>";
-		};
-		D982F7722B0535FF0064EA57 /* SlayChatUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D982F7732B0535FF0064EA57 /* SlayChatUITests.swift */,
-				D982F7752B0535FF0064EA57 /* SlayChatUITestsLaunchTests.swift */,
-			);
-			path = SlayChatUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D982F7762B0535FF0064EA57 /* SlayChatUITestsLaunchTests.swift in Sources */,
-				D982F7742B0535FF0064EA57 /* SlayChatUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

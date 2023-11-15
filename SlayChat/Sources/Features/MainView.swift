@@ -9,12 +9,12 @@ import SwiftUI
 
 struct MainView: View {
 
-    @State private var isShowingLogin: Bool = true
+    @State private var isShowingLogin: Bool = false
 
     var body: some View {
         TabView {
             NavigationStack {
-                Text("Chat List Screen")
+                ChatListView()
             }
             .tabItem {
                 Label("Chats", systemImage: "message")

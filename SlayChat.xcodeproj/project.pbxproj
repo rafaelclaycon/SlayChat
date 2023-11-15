@@ -15,6 +15,11 @@
 		D982F78B2B053B330064EA57 /* LargeCapsuleBorderedProminentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F78A2B053B330064EA57 /* LargeCapsuleBorderedProminentButtonStyle.swift */; };
 		D982F78E2B053D7E0064EA57 /* CreateNewAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F78D2B053D7E0064EA57 /* CreateNewAccountView.swift */; };
 		D982F7902B053DED0064EA57 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F78F2B053DED0064EA57 /* MainView.swift */; };
+		D982F7922B055CDF0064EA57 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F7912B055CDF0064EA57 /* ChatListView.swift */; };
+		D982F7952B0563B50064EA57 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F7942B0563B50064EA57 /* Message.swift */; };
+		D982F7972B0564EF0064EA57 /* ChatPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F7962B0564EF0064EA57 /* ChatPreview.swift */; };
+		D982F7992B0565170064EA57 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F7982B0565170064EA57 /* Chat.swift */; };
+		D982F79C2B0567250064EA57 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D982F79B2B0567250064EA57 /* Date+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		D982F78A2B053B330064EA57 /* LargeCapsuleBorderedProminentButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCapsuleBorderedProminentButtonStyle.swift; sourceTree = "<group>"; };
 		D982F78D2B053D7E0064EA57 /* CreateNewAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAccountView.swift; sourceTree = "<group>"; };
 		D982F78F2B053DED0064EA57 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D982F7912B055CDF0064EA57 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		D982F7942B0563B50064EA57 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		D982F7962B0564EF0064EA57 /* ChatPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPreview.swift; sourceTree = "<group>"; };
+		D982F7982B0565170064EA57 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		D982F79B2B0567250064EA57 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +130,9 @@
 		D982F7822B05373F0064EA57 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D982F7932B0563A90064EA57 /* Models */,
 				D982F7842B0537830064EA57 /* Features */,
+				D982F79A2B0567150064EA57 /* Extensions */,
 				D982F7892B053B1C0064EA57 /* ViewModifiers */,
 				D982F7852B05378A0064EA57 /* AppSupport */,
 			);
@@ -167,6 +179,8 @@
 		D982F7872B0537A40064EA57 /* ChatList */ = {
 			isa = PBXGroup;
 			children = (
+				D982F7912B055CDF0064EA57 /* ChatListView.swift */,
+				D982F7962B0564EF0064EA57 /* ChatPreview.swift */,
 			);
 			path = ChatList;
 			sourceTree = "<group>";
@@ -192,6 +206,23 @@
 				D982F78D2B053D7E0064EA57 /* CreateNewAccountView.swift */,
 			);
 			path = CreateAnAccount;
+			sourceTree = "<group>";
+		};
+		D982F7932B0563A90064EA57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D982F7942B0563B50064EA57 /* Message.swift */,
+				D982F7982B0565170064EA57 /* Chat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D982F79A2B0567150064EA57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D982F79B2B0567250064EA57 /* Date+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +359,12 @@
 				D982F75B2B0535FE0064EA57 /* LoginView.swift in Sources */,
 				D982F7592B0535FE0064EA57 /* SlayChatApp.swift in Sources */,
 				D982F7902B053DED0064EA57 /* MainView.swift in Sources */,
+				D982F7992B0565170064EA57 /* Chat.swift in Sources */,
+				D982F7922B055CDF0064EA57 /* ChatListView.swift in Sources */,
 				D982F78E2B053D7E0064EA57 /* CreateNewAccountView.swift in Sources */,
+				D982F79C2B0567250064EA57 /* Date+.swift in Sources */,
+				D982F7972B0564EF0064EA57 /* ChatPreview.swift in Sources */,
+				D982F7952B0563B50064EA57 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

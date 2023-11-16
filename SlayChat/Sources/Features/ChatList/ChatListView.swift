@@ -10,8 +10,8 @@ import SwiftUI
 struct ChatListView: View {
 
     @State private var chats: [Chat] = [
-        .init(sender: "rafaelschmitt", recipient: "nilay", messages: [.init(content: "Hey man")]),
-        .init(sender: "rafaelschmitt", recipient: "davidpierce", messages: [.init(content: "What you up to?")])
+        .init(sender: "trixie", recipient: "katya"),
+        .init(sender: "katya", recipient: "trixie")
     ]
     @State private var showStartChatView: Bool = false
 
@@ -33,8 +33,14 @@ struct ChatListView: View {
             }
         } else {
             ScrollView {
-                ForEach(chats) {
-                    ChatPreview(chat: $0)
+                ForEach(chats) { chat in
+                    NavigationLink {
+                        ChatView(chat: chat)
+                    } label: {
+                        ChatPreview(chat: chat)
+                    }
+                    .foregroundStyle(.primary)
+
                     Divider()
                 }
             }

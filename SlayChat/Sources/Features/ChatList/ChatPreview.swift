@@ -47,6 +47,7 @@ struct ChatPreview: View {
             recipient: "nilay",
             messages: [
                 .init(
+                    sender: "nilay",
                     content: "What up man",
                     timestamp: .init(from: "2023-11-15T20:36:27.074")
                 )
